@@ -48,6 +48,11 @@ A scatter plot was created with a positive linear.
 
 ### Numerical results
 
+```{r}
+cor(SIMS~ARM,data=data)
+```
+
+We got 1 answer in the result with [1] 0.686. It tell us that there is an amount of  correlation between SIMS and ARM. 
 
 ### Inferential  (Build model.1)
 
