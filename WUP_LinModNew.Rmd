@@ -150,8 +150,18 @@ cor(SIMS~ARM+GRIP,data=data)
  
 ### Inferential  (Build 2-dimentional model.3)
 
+```{r}
+model.3 <- lm(SIMS~ARM+GRIP,data=data)
+summary.lm(model.3)
+```
+We have some important statistics. We have multiple R square and Residual standard Error for SIMS, ARM and GRIP. We have adjusted R square of 0.535 and multiple r square are 0.542. As you put more things into the model the result is lower.
+
 #### predict model.3 at target point
   
+  
+```{r}
+predict.lm(model.3, mydata, interval = "prediction")
+```
 
 ## Comparing nested models ANOVA Test
 
