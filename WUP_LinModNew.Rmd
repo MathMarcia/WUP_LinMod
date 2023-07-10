@@ -72,11 +72,32 @@ predict.lm(model.1, mydata, interval = "prediction")
 ```
 The value is 1.579392 and the interval can be in between 0.86 - 4.02 positive.  
 #### scatterplot with model fit
-  
+
+```{r}
+basicNN <- ggplot(data, aes(y = SIMS, x = ARM)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "SIMS ~ ARM") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+basicNN
+
+```
+
+
 
 ## Model 2 SIM~GRIP
 
+```{r}
+mygrip <- ggplot(data, aes(y = SIMS, x = GRIP)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "SIMS ~ GRIP") +
+  theme(plot.title = element_text(hjust = 0.5))
 
+mygrip
+
+```
 
 ### Now add in scatterplot
 
