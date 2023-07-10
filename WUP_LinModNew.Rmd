@@ -125,7 +125,7 @@ We got 1 answer in the result with [1] 0.639. It tell us that there is an amount
 model.1 <- lm(SIMS~GRIP,data=data)
 summary.lm(model.1)
 ```
-
+We have some important statistics. We have multiple R square and Residual standard Error for SIMS VS. GRIP. We have adjusted R square of 0.4053 and multiple R square are 0.4053. As you put more things into the model the result is lower. 
 
 #### predict model.2 at target point
 
