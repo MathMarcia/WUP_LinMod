@@ -35,7 +35,9 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 
 ## Model 1 SIM~ARMS
 
-
+```{r}
+cor(SIMS~ARM,data=data)
+```
 
 ### scatterplot
 ```{r}
@@ -44,7 +46,7 @@ basicNN + geom_point()
 ```
 
 
-A scatter plot was created with a positive linear. 
+A scatter plot was created with a positive linear relationship. 
 
 ### Numerical results
 
@@ -84,7 +86,7 @@ basicNN
 
 ```
 
-
+SIMS increases and the ARM increaces is also positive relationship. 
 
 ## Model 2 SIM~GRIP
 
@@ -100,17 +102,30 @@ mygrip
 ```
 
 ### Now add in scatterplot
+```{r}
+basicNN <- ggplot(data, aes(y = SIMS, x = GRIP)) +
+  geom_point() +
+  labs(title = "SIMS and GRIP") +
+  theme(plot.title = element_text(hjust = 0.5))
 
-
+basicNN
+```
 
 ### Numerical results 
 
+```{r}
+cor(SIMS~GRIP,data=data)
+```
 
+We got 1 answer in the result with [1] 0.639. It tell us that there is an amount of  correlation between SIMS and GRIP. 
 
 ### Inferential  (Build model.2)
   
 
 #### predict model.2 at target point
+
+
+
 
 #### now add the model fit to our plot for model.2
   
