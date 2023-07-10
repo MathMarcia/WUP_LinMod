@@ -56,6 +56,12 @@ We got 1 answer in the result with [1] 0.686. It tell us that there is an amount
 
 ### Inferential  (Build model.1)
 
+```{r}
+model.1 <- lm(SIMS~ARM,data=data)
+summary.lm(model.1)
+```
+
+We have some important statistics. We have multiple R square and Residual standard Error for SIMS VS. ARM. We have adjusted R square of 467 and multiple r square are 0.4706. As you put more things into the model the result is lower. 
 
 
 #### Predict at target point
