@@ -163,9 +163,19 @@ We have some important statistics. We have multiple R square and Residual standa
 predict.lm(model.3, mydata, interval = "prediction")
 ```
 
+The value is 0.5997 and the interval can be in between -1.71 to  2.91 positive.
+
+
 ## Comparing nested models ANOVA Test
 
+
+
 ### Model.1 vs Model.3
+
+```{r}
+anova(model.1,model.3)
+```
+
 ### Model.2 vs Model.3
 
 ## Informally compare Model.1 with model.2
