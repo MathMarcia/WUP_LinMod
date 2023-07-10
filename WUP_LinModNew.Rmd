@@ -122,15 +122,15 @@ We got 1 answer in the result with [1] 0.639. It tell us that there is an amount
 ### Inferential  (Build model.2)
   
 ```{r}
-model.1 <- lm(SIMS~GRIP,data=data)
-summary.lm(model.1)
+model.2 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.2)
 ```
 We have some important statistics. We have multiple R square and Residual standard Error for SIMS VS. GRIP. We have adjusted R square of 0.4053 and multiple R square are 0.4053. As you put more things into the model the result is lower. 
 
 #### predict model.2 at target point
 
 ```{r}
-predict.lm(model.1, mydata, interval = "prediction")
+predict.lm(model.2, mydata, interval = "prediction")
 ```
 The value is -0.808 and the interval can be in between -3.38 to  1.76.  
 
@@ -171,23 +171,22 @@ The value is 0.5997 and the interval can be in between -1.71 to  2.91 positive.
 
 
 ### Model.1 vs Model.3
-
 ```{r}
 anova(model.1,model.3)
 ```
+If we want to compare we can use this code. of anova(model__). The P value is a lot smaller. some numbers e- The RES.df 243.07 the other were 188. This shows that model 1 is better than model 3 and model 2 is better than 3. We have statistical evidence that sims and grip is better than sims,arm and grip.
 
-
-```{r}
-anova(model.1)
-```
-
-```{r}
-anova(model.3)
-```
-
-
-If we want to compare we can use this code. 
 ### Model.2 vs Model.3
 
+```{r}
+anova(model.2,model.3)
+```
+
+If we want to compare we can use this code. of anova(model__). The P value is a lot smaller. some numbers e- The RES.df 243.07 the other were 188. This shows that model 1 is better than model 3 and model 2 is better than 3. We have statistical evidence that sims and grip is better than sims,arm and grip.
+
+
 ## Informally compare Model.1 with model.2
+```{r}
+anova(model.1,model.2)
+```
 
