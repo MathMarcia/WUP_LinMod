@@ -129,8 +129,10 @@ We have some important statistics. We have multiple R square and Residual standa
 
 #### predict model.2 at target point
 
-
-
+```{r}
+predict.lm(model.1, mydata, interval = "prediction")
+```
+The value is -0.808 and the interval can be in between -3.38 to  1.76.  
 
 #### now add the model fit to our plot for model.2
   
@@ -140,7 +142,9 @@ We have some important statistics. We have multiple R square and Residual standa
 
 ### Numerical results (cor)
 
-`
+````{r}
+cor(SIMS~ARM+GRIP,data=data)
+```
   
 ### Inferential  (Build 2-dimentional model.3)
 
