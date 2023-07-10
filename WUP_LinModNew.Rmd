@@ -154,7 +154,7 @@ cor(SIMS~ARM+GRIP,data=data)
 model.3 <- lm(SIMS~ARM+GRIP,data=data)
 summary.lm(model.3)
 ```
-We have some important statistics. We have multiple R square and Residual standard Error for SIMS, ARM and GRIP. We have adjusted R square of 0.535 and multiple r square are 0.542. As you put more things into the model the result is lower.
+We have some important statistics. We have multiple R square and Residual standard Error for SIMS, ARM and GRIP. We have adjusted R square of 0.535 and multiple R square are 0.542. from residual it decreases to adjusted R squared
 
 #### predict model.3 at target point
   
