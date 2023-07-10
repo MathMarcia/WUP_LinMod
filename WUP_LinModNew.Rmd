@@ -145,7 +145,9 @@ The value is -0.808 and the interval can be in between -3.38 to  1.76.
 ````{r}
 cor(SIMS~ARM+GRIP,data=data)
 ```
-  
+ 
+ The correlation is larger for ARM=GRIP=SIMS than SIMS and GRIp with the value of 0.732. 
+ 
 ### Inferential  (Build 2-dimentional model.3)
 
 #### predict model.3 at target point
