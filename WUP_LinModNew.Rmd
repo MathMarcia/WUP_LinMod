@@ -46,7 +46,7 @@ basicNN + geom_point()
 ```
 
 
-A scatter plot was created with a positive linear relationship. 
+A scatter plot was created with a positive linear relationship. The code creates a scatter plot with SIMS on the y-axis and ARM on the x-axis, representing the relationship between these two variables. Each data point is represented by a point on the plot.
 
 ### Numerical results
 
@@ -54,7 +54,13 @@ A scatter plot was created with a positive linear relationship.
 cor(SIMS~ARM,data=data)
 ```
 
-We got 1 answer in the result with [1] 0.686. It tell us that there is an amount of  correlation between SIMS and ARM. 
+The code calculates the correlation coefficient between two variables (SIMS and ARM) in the data data set.
+
+If the correlation coefficient is close to 1, it indicates a strong positive linear relationship, meaning that as one variable increases, the other tends to increase as well.
+
+If the correlation coefficient is close to -1, it indicates a strong negative linear relationship, meaning that as one variable increases, the other tends to decrease.
+
+If the correlation coefficient is close to 0, it indicates a weak or no linear relationship between the variables.
 
 ### Inferential  (Build model.1)
 
